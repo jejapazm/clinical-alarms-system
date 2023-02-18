@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sistema de alertas</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js" integrity="sha512-aMGMvNYu8Ue4G+fHa359jcPb1u+ytAF+P2SCb+PxrjCdO3n3ZTxJ30zuH39rimUggmTwmh2u7wvQsDTHESnmfQ==" crossorigin="anonymous"></script>
+    <link
+      href="//mincss.com/entireframework.min.css"
+      rel="stylesheet"
+      type="text/css"
+      type="text/css"
+    />
+    <link href="{{url_for('static', filename = 'css/app.css')}}" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="nav">
+      <div class="container">
+        <a class="pagename current" href="#">
+            CLÍNICA RENDÓN
+        </a>
+      </div>
+        <div class="b">
+            <td>
+                <tr>
+                    <span class="sound">Habilitar sonido</span>
+                    <label class="switch">
+                        <input type="checkbox" id="myCheck">
+                        <span class="slider round" ></span>
+                    </label>
+                </tr>
+            </td>
+        </div>
+    </nav>
+
+    <button class="btn-close btn btn-sm">×</button>
+    <div class="container">
+      <div class="hero">
+        <h2>Sistema Alertas de Camas</h2>
+      </div>
+    </div>
+    <main class="grid chart-container">
+      <article>
+        <div class="text">
+          <h3>CAMA 203-A</h3>
+          <button id="203-A">SIN ALERTAS</button>
+        </div>
+      </article>
+        <article>
+        <div class="text">
+          <h3>CAMA 203-B</h3>
+          <button id="203-B">SIN ALERTAS</button>
+        </div>
+      </article>
+        <article>
+        <div class="text">
+          <h3>CAMA 203-C</h3>
+          <button id="203-C">SIN ALERTAS</button>
+        </div>
+      </article>
+        <article>
+        <div class="text">
+          <h3>CAMA 204-A</h3>
+          <button id="204-A">SIN ALERTAS</button>
+        </div>
+      </article>
+        <article>
+        <div class="text">
+          <h3>CAMA 204-B</h3>
+          <button id="204-B">SIN ALERTAS</button>
+        </div>
+      </article>
+        <article>
+        <div class="text">
+          <h3>CAMA 204-C</h3>
+          <button id="204-C">SIN ALERTAS</button>
+        </div>
+      </article>
+        <article>
+        <div class="text">
+          <h3>CAMA 204-D</h3>
+          <button id="204-D">SIN ALERTAS</button>
+        </div>
+      </article>
+        <article>
+        <div class="text">
+          <h3>CAMA 205-A</h3>
+          <button id="205-A">SIN ALERTAS</button>
+        </div>
+      </article>
+        <article>
+        <div class="text">
+          <h3>CAMA 205-B</h3>
+          <button id="205-B">SIN ALERTAS</button>
+        </div>
+      </article>
+        <article>
+        <div class="text">
+          <h3>CAMA 205-C</h3>
+          <button id="205-C">SIN ALERTAS</button>
+        </div>
+      </article>
+        <article>
+        <div class="text">
+          <h3>CAMA 205-D</h3>
+          <button id="205-D">SIN ALERTAS</button>
+        </div>
+      </article>
+        <article>
+        <div class="text">
+          <h3>CAMA 206-A</h3>
+          <button id="206-A">SIN ALERTAS</button>
+        </div>
+      </article>
+        <article>
+        <div class="text">
+          <h3>CAMA 206-B</h3>
+          <button id="206-B">SIN ALERTAS</button>
+        </div>
+      </article>
+        <article>
+        <div class="text">
+          <h3>CAMA 206-C</h3>
+          <button id="206-C">SIN ALERTAS</button>
+        </div>
+      </article>
+        <article>
+        <div class="text">
+          <h3>CAMA 206-D</h3>
+          <button id="206-D">SIN ALERTAS</button>
+        </div>
+      </article>
+    </main>
+  <script type="text/javascript" src="{{ url_for('static', filename = 'js/app.js') }}"></script>
+  </body>
+</html>

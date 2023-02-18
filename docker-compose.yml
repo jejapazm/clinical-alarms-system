@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+    alarms-system:
+        image: alarms-system:latest
+        container_name: alarms-system
+        ports:
+            - "80:8000"
+        environment:
+            - TZ=America/Guayaquil
+            - FLASK_APP=app.py
+            - FLASK_DEBUG=0
+        restart: always
